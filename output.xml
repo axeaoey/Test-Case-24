@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.1 on win32)" generated="2025-02-11T09:50:11.590378" rpa="false" schemaversion="5">
+<suite id="s1" name="Test-Case-24" source="c:\Users\HP\Desktop\Framework\Test-Case-24.robot">
+<test id="s1-t1" name="Test Case 24: Download Invoice after purchase order" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-11T09:50:12.124988" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T09:50:12.123894" elapsed="6.027129"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T09:50:18.152021" elapsed="0.060619"/>
+</kw>
+<kw name="Verify Home Page Is Visible">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Home</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T09:50:18.214661" elapsed="0.052023"/>
+</kw>
+<status status="PASS" start="2025-02-11T09:50:18.213645" elapsed="0.053039"/>
+</kw>
+<kw name="Add Products To Cart">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-02-11T09:50:23.679018" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-11T09:50:23.680015" level="FAIL">Element '//button[contains(text(),'Add to cart')]' not visible after 5 seconds.</msg>
+<arg>//button[contains(text(),'Add to cart')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-02-11T09:50:18.268909" elapsed="5.421212">Element '//button[contains(text(),'Add to cart')]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(),'Add to cart')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-11T09:50:23.690121" elapsed="0.001999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(),'Add to cart')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-11T09:50:23.692120" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-11T09:50:18.267706" elapsed="5.425414">Element '//button[contains(text(),'Add to cart')]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Cart Button">
+<status status="NOT RUN" start="2025-02-11T09:50:23.695121" elapsed="0.000512"/>
+</kw>
+<kw name="Verify Cart Page Is Displayed">
+<status status="NOT RUN" start="2025-02-11T09:50:23.702158" elapsed="0.002048"/>
+</kw>
+<kw name="Click Proceed To Checkout">
+<status status="NOT RUN" start="2025-02-11T09:50:23.705717" elapsed="0.001510"/>
+</kw>
+<kw name="Click Register Or Login Button">
+<status status="NOT RUN" start="2025-02-11T09:50:23.707227" elapsed="0.000000"/>
+</kw>
+<kw name="Fill Signup Details And Create Account">
+<status status="NOT RUN" start="2025-02-11T09:50:23.715775" elapsed="0.001009"/>
+</kw>
+<kw name="Verify Account Created And Click Continue">
+<status status="NOT RUN" start="2025-02-11T09:50:23.716784" elapsed="0.001043"/>
+</kw>
+<kw name="Verify Logged In As Username">
+<status status="NOT RUN" start="2025-02-11T09:50:23.719443" elapsed="0.000000"/>
+</kw>
+<kw name="Click Cart Button">
+<status status="NOT RUN" start="2025-02-11T09:50:23.720562" elapsed="0.000000"/>
+</kw>
+<kw name="Click Proceed To Checkout Button">
+<status status="NOT RUN" start="2025-02-11T09:50:23.721563" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Address Details And Review Order">
+<status status="NOT RUN" start="2025-02-11T09:50:23.723070" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Description And Place Order">
+<status status="NOT RUN" start="2025-02-11T09:50:23.724084" elapsed="0.000996"/>
+</kw>
+<kw name="Enter Payment Details">
+<status status="NOT RUN" start="2025-02-11T09:50:23.725608" elapsed="0.000000"/>
+</kw>
+<kw name="Click Pay And Confirm Order">
+<status status="NOT RUN" start="2025-02-11T09:50:23.726944" elapsed="0.000506"/>
+</kw>
+<kw name="Verify Order Success Message">
+<status status="NOT RUN" start="2025-02-11T09:50:23.727450" elapsed="0.000000"/>
+</kw>
+<kw name="Click Download Invoice And Verify">
+<status status="NOT RUN" start="2025-02-11T09:50:23.729725" elapsed="0.001158"/>
+</kw>
+<kw name="Click Continue Button">
+<status status="NOT RUN" start="2025-02-11T09:50:23.730883" elapsed="0.000000"/>
+</kw>
+<kw name="Click Delete Account Button">
+<status status="NOT RUN" start="2025-02-11T09:50:23.732283" elapsed="0.001007"/>
+</kw>
+<kw name="Verify Account Deleted And Click Continue">
+<status status="NOT RUN" start="2025-02-11T09:50:23.738959" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-02-11T09:50:23.741958" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-11T09:50:12.121913" elapsed="11.621061">Element '//button[contains(text(),'Add to cart')]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-02-11T09:50:11.599320" elapsed="12.146155"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test-Case-24" id="s1" pass="0" fail="1" skip="0">Test-Case-24</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
