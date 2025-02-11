@@ -1,7 +1,20 @@
 *** Settings ***
-Library  SeleniumLibrary
-Library  Collections
+Library    SeleniumLibrary
+Library    Collections
+Library    OperatingSystem
+Resource    Test-Case-24.robot
 
+Suite Setup    Initialize Test
+Suite Teardown    Cleanup Test
+
+*** Keywords ***
+Initialize Test
+    # Add initialization steps here
+    Log    Initialization successful
+
+Cleanup Test
+    # Add cleanup steps here
+    Log    Cleanup successful
 *** Variables ***
 ${URL}  http://automationexercise.com
 ${BROWSER}  Chrome
