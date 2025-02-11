@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Library  Collections
 
 *** Variables ***
 ${URL}  http://automationexercise.com
@@ -39,6 +40,7 @@ Verify Home Page Is Visible
 
 Add Products To Cart
     #เพิ่มสินค้าลงในตะกร้า
+    Wait Until Element Is Visible  //button[contains(text(),'Add to cart')]
     Click Element  //button[contains(text(),'Add to cart')]
 
 Click Cart Button
